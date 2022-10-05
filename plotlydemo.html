@@ -1,12 +1,12 @@
 <html>
 
 <head>
-   <title>JS Demo</title>
+  <title>Plotly Demo</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
-<body>
-
-    <center>
+<center>
     <ul>
         <a href="index.html">Home</a>
         <a href="heading.html">Heading Demo</a>
@@ -22,27 +22,18 @@
     </ul>
     </center>
 
-    <p>Open the console!</p>
 
-    <script>
-        // this is an internal javascript section
-        console.log("This sript was loaded withing the HTML")
-    </script>
+<body>
 
+  <div id="plot"></div>
 
+  <select id="selDataset">
+    <option value="dataset1">DataSet1</option>
+    <option value="dataset2">DataSet2</option>
+  </select>
 
-    <center>
-        <div id="name"></div>
-    </center>
-
-    <footer>
-        <center>
-            <hr>
-            <p>&copy; IST 226 2022 </p>
-        </center>
-    </footer>
+  <script src="plots.js"></script>
 
 </body>
-<script type="text/javascript" src="app.js"></script>
 
 </html>
